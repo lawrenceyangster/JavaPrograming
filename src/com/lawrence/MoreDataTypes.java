@@ -9,4 +9,14 @@ public class MoreDataTypes {
 		
 		return sum;
 	}
+	
+	public static void shift()
+	{
+		byte i = -34;
+		
+		System.out.println("Left Shifting -34 by 2 = "+(-34<<2) );
+		System.out.println("Right Shifting -34 by 2 = "+(-34>>2) );
+		System.out.println("Unsigned Right Shifting -34 by 2 = "+(-34>>>2) );
+		
+	}
 }
