@@ -7,5 +7,6 @@ public class Example {
 	{
 		DataTypes.intLiterals();
 		DataTypes.binaryLiterals();
+		System.out.println(MoreDataTypes.sum(new int[]{1,2,3}));
 	}
 }
