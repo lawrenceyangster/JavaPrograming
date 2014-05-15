@@ -9,5 +9,9 @@ public class Example {
 		DataTypes.binaryLiterals();
 		System.out.println(MoreDataTypes.sum(new int[]{1,2,3}));
 		MoreDataTypes.shift();
+		
+		char array[] = {'a', 'd', 'e', 'b', 'f'};
+		QuickSort.qs(array);
+		System.out.println(array);
 	}
 }
