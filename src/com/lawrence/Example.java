@@ -1,7 +1,5 @@
 package com.lawrence;
 
-import com.lawrence.DataTypes;;
-
 public class Example {
 	public static void main(String[] args)
 	{
@@ -13,5 +11,8 @@ public class Example {
 		char array[] = {'a', 'd', 'e', 'b', 'f'};
 		QuickSort.qs(array);
 		System.out.println(array);
+		
+		int[] intArray = {-1, -999, 3000, 12, -135_35};
+		new Outer(intArray).min();
 	}
 }
