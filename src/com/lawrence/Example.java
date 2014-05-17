@@ -1,5 +1,7 @@
 package com.lawrence;
 
+import com.lawrence.package1.Series;
+import com.lawrence.package2.TwoBookSeries;
 public class Example {
 	public static void main(String[] args)
 	{
@@ -14,5 +16,14 @@ public class Example {
 		
 		int[] intArray = {-1, -999, 3000, 12, -135_35};
 		new Outer(intArray).min();
+		
+		Series s = new TwoBookSeries(100);
+		
+		int[] _array = new int[100];
+		
+		s.getArray(_array);
+		
+		for(int i=0; i<_array.length; i++)
+			System.out.println(_array[i]);
 	}
 }

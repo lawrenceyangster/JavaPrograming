@@ -5,9 +5,18 @@ import com.lawrence.package1.Book;
 
 public class TwoBookSeries implements Series{
 
-	private Book book1 = new Book("author1", "publish date1");
-	private Book book2 = new Book("author2", "publish date2");
+	private int[] array;
+	private int length;
 	private int currentIndex=Series.OUT_OF_BOUNDARY;
+	
+	public TwoBookSeries(int length)
+	{
+		this.length = length;
+		array = new int[length];
+		
+		for (int i=0; i<length; i++)
+			array[i] = i;
+	}
 	
 	public int getNext()
 	{
@@ -15,22 +24,26 @@ public class TwoBookSeries implements Series{
 			return currentIndex;
 		
 		else
-			return (currentIndex+1)%2;
-		
+		{
+			int ret = array[currentIndex];
+			currentIndex = (currentIndex + 1) % length;
+			return ret;
+		}
 	
 	}
 	public void restart()
 	{
 		currentIndex=0;
 	}
+	@Override
 	public int setStart(int index)
 	{
-		if(index<0 || index>1)
-			currentIndex =  Series.OUT_OF_BOUNDARY;
+		if(index<0 || index>length)
+			currentIndex = Series.OUT_OF_BOUNDARY;
 		else
 			currentIndex = index;
 		
 		return currentIndex;
-		
 	}
+
 }
