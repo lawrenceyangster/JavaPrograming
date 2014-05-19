@@ -5,7 +5,6 @@ public class ThreadTester {
 	{
 		Thread thread1 = new Thread(new SimpleRunnable("tread1"));
 		
-		thread1.start();
 		
 		testMainThread();
 	}
