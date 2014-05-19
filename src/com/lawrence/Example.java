@@ -25,5 +25,7 @@ public class Example {
 		
 		for(int i=0; i<_array.length; i++)
 			System.out.println(_array[i]);
+		
+		ThreadTester.testSimpleThread();
 	}
 }
