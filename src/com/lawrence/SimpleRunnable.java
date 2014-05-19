@@ -1,12 +1,11 @@
 package com.lawrence;
 
-public class SimpleRunnable implements Runnable {
-	private Thread mThread;
+public class SimpleRunnable extends Thread {
 	
 	public SimpleRunnable(String threadName)
 	{
-		mThread = new Thread(this, threadName);
-		mThread.start();
+		super(threadName);
+		start();
 	}
 	
 	public void run()
@@ -15,15 +14,15 @@ public class SimpleRunnable implements Runnable {
 		{
 			try
 			{
-				System.out.println("Count = " + i + " from thread " + mThread.getName());
+				System.out.println("Count = " + i + " from thread " + getName());
 				Thread.sleep(400);
 			}
 			catch(InterruptedException ex)
 			{
-				System.out.println("Thread " + mThread.getName() + " interrupted");
+				System.out.println("Thread " + getName() + " interrupted");
 			}
 			
 		}
-		System.out.println("Thread" + mThread.getName() + " dying");
+		System.out.println("Thread" + getName() + " dying");
 	}
 }
