@@ -1,7 +1,7 @@
 package com.lawrence;
 
 public class SimpleRunnable implements Runnable {
-	private Thread mThread;
+	Thread mThread;
 	
 	public SimpleRunnable(String threadName)
 	{
