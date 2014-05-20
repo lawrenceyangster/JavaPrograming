@@ -1,7 +1,6 @@
 package com.lawrence.package2;
 
 import com.lawrence.package1.Series;
-import com.lawrence.package1.Book;
 
 public class TwoBookSeries implements Series{
 

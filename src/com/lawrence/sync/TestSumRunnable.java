@@ -7,7 +7,7 @@ public class TestSumRunnable {
 		int[] array2 = {2,4,6,8,10};
 		
 		new SumRunnable("thread1", array1);
-		new SumRunnable("thread1", array2);
+		new SumRunnable("thread2", array2);
 		
 	}
 }
