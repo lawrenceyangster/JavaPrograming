@@ -35,6 +35,7 @@ public class ThreadTester {
 			}
 			
 		}
+		
 		System.out.println("Main Thread dying");
 	}
 }

@@ -2,6 +2,7 @@ package com.lawrence;
 
 import com.lawrence.package1.Series;
 import com.lawrence.package2.TwoBookSeries;
+import com.lawrence.sync.TestSumRunnable;
 public class Example {
 	public static void main(String[] args)
 	{
@@ -27,5 +28,7 @@ public class Example {
 			System.out.println(_array[i]);
 		
 		ThreadTester.testSimpleThread();
+		
+		TestSumRunnable.testSum();
 	}
 }
