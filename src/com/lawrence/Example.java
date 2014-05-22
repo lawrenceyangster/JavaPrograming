@@ -4,6 +4,7 @@ import com.lawrence.package1.Series;
 import com.lawrence.package2.TwoBookSeries;
 import com.lawrence.sync.TestSumRunnable;
 import com.lawrence.sync.TestWaitNotify;
+import com.lawrence.enumeration.Transport;
 public class Example {
 	public static void main(String[] args)
 	{
@@ -31,7 +32,9 @@ public class Example {
 //		ThreadTester.testSimpleThread();
 //		
 //		TestSumRunnable.testSum();
+//		
+//		TestWaitNotify.testWaitNotify();
 		
-		TestWaitNotify.testWaitNotify();
+		Transport.testTransportation();
 	}
 }
