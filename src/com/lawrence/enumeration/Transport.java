@@ -2,7 +2,18 @@ package com.lawrence.enumeration;
 
 enum Transportation
 {
-	CAR, BIKE, BUS, WALK, RAILWAY, AIRLINE
+	CAR, BIKE, BUS, WALK, RAILWAY, AIRLINE;
+	
+	private int speed;
+	
+	private Transportation(int speed)
+	{
+		this.speed = speed;
+	}
+	int getSpeed()
+	{
+		return this.speed;
+	}
 }
 
 public class Transport {
