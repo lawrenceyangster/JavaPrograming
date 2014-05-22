@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-
+@MyAnno(str="try", val=10)
 public class AutoResourceManagement {
 	/**
 	 * Copy the content of the src file to target file
