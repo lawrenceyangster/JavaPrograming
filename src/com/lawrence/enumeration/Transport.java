@@ -2,7 +2,7 @@ package com.lawrence.enumeration;
 
 enum Transportation
 {
-	CAR, BIKE, BUS, WALK, RAILWAY, AIRLINE;
+	CAR(80), BIKE(20), BUS(60), WALK(10), RAILWAY(300), AIRLINE(700);
 	
 	private int speed;
 	
