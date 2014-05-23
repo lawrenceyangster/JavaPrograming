@@ -5,6 +5,8 @@ import com.lawrence.package2.TwoBookSeries;
 import com.lawrence.sync.TestSumRunnable;
 import com.lawrence.sync.TestWaitNotify;
 import com.lawrence.enumeration.Transport;
+import com.lawrence.general.GenericsDemo;
+
 public class Example {
 	public static void main(String[] args)
 	{
@@ -36,5 +38,6 @@ public class Example {
 //		TestWaitNotify.testWaitNotify();
 		
 		Transport.testTransportation();
+		GenericsDemo.testGen();
 	}
 }
