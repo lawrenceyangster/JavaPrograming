@@ -13,11 +13,22 @@ public class SumArray {
 			{
 				Thread.sleep(10);
 			}
-			catch(InterruptedException ex)
+			catch(InterruptedException | NullPointerException ex)
 			{
 				ex.printStackTrace();
 			}
 		}
 		return total;
+	}
+	public void testContinueWithLabel(){
+		final int maxLoop = 10;
+		final int breakPoint = 5;
+		testLoop: for(int i = 0; i< maxLoop; i++)
+		{
+			if(i == breakPoint )
+				continue testLoop;
+			else
+				System.out.println(i);
+		}
 	}
 }

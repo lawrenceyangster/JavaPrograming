@@ -6,6 +6,7 @@ import com.lawrence.sync.TestSumRunnable;
 import com.lawrence.sync.TestWaitNotify;
 import com.lawrence.enumeration.Transport;
 import com.lawrence.general.GenericsDemo;
+import com.lawrence.sync.SumArray;
 
 public class Example {
 	public static void main(String[] args)
@@ -39,5 +40,8 @@ public class Example {
 		
 		Transport.testTransportation();
 		GenericsDemo.testGen();
+
+		new SumArray().testContinueWithLabel();
+
 	}
 }
