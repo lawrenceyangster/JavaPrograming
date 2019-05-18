@@ -1,12 +1,19 @@
 package com.lawrence;
 
-import com.lawrence.package1.Series;
-import com.lawrence.package2.TwoBookSeries;
-import com.lawrence.sync.TestSumRunnable;
-import com.lawrence.sync.TestWaitNotify;
+import com.lawrence.package1.Book;
+import com.lawrence.package2.ThreeBookSeries;
 import com.lawrence.enumeration.Transport;
 import com.lawrence.general.GenericsDemo;
 import com.lawrence.sync.SumArray;
+
+import static com.lawrence.package1.SeasonUtil.*;
+import com.lawrence.leetcode.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.lawrence.chapter4.UnboundLamda;
+import com.lawrence.chapter4.BoundLamda;
 
 public class Example {
 	public static void main(String[] args)
@@ -42,6 +49,28 @@ public class Example {
 		GenericsDemo.testGen();
 
 		new SumArray().testContinueWithLabel();
+		SeasonUtil2 v = new SeasonUtil2();
 
+		ThreeBookSeries series = new ThreeBookSeries();
+		series.getNext();
+
+		Object obj = new int[] {1, 2 };
+
+		int[] input = new int[] {2, 7, 11, 15};
+
+		int[] output = new TwoSum().twoSum(input, 9);
+		System.out.println(output);
+
+		List<?> unknownList = new ArrayList<>();
+		unknownList.add(null);
+
+		List<String> lstStr = new ArrayList<>();
+		lstStr.add("hello");
+
+		UnboundLamda labda = Book::getAuthor;
+		labda.getAuthor(new Book("Lawrence", "Apr 1st, 2019"));
+
+		BoundLamda bound = System.out::print;
+		bound.print(new Book("Lawrence", "Apr 1st, 2019"));
 	}
 }

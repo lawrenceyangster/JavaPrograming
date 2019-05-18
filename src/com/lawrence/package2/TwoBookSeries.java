@@ -2,6 +2,9 @@ package com.lawrence.package2;
 
 import com.lawrence.package1.Series;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class TwoBookSeries implements Series{
 
 	private int[] array;
@@ -44,5 +47,6 @@ public class TwoBookSeries implements Series{
 		
 		return currentIndex;
 	}
+	Set<String>  words = new HashSet<>();
 
 }

@@ -1,5 +1,7 @@
 package com.lawrence.sync;
 
+import java.awt.*;
+
 public class SumArray {
 	private int total =0 ;
 	
@@ -29,6 +31,8 @@ public class SumArray {
 				continue testLoop;
 			else
 				System.out.println(i);
+
+
 		}
 	}
 }

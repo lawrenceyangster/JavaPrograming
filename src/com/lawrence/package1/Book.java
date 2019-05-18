@@ -17,4 +17,8 @@ public class Book {
 	{
 		return this.publishDate;
 	}
+	public void setAuthor(String author){
+		this.author = author;
+	}
+
 }
